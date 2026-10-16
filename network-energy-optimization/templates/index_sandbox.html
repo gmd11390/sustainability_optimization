@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Networks</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #666;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            max-width: 100ch;
+            margin: 0 auto;
+        }
+        button {
+            background-color: #5ba63d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4b8c32;
+        }
+        .logo {
+            margin-top: 20px;
+        }
+        .image {
+            margin: 20px 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: calc(100% - 24px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sustainable Networks</h1>
+        <div class="image">
+            <img src="static/images/sustainability_tool_logo2.jpg" alt="Meraki API" width="150">
+        </div>
+        <div class="section">
+            <form action="/create_site" method="post">
+                <input type="text" name="network_name" placeholder="Network Name" required>
+                <input type="text" name="network_location" placeholder="Network Location" required>
+                <br>
+                <br>
+                <textarea name="serial_numbers" placeholder="Enter serial numbers, one per line" required></textarea>
+                <br>
+                <br>
+                <button type="submit">Create a New Site</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

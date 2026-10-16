@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Created</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #666;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            max-width: 100ch;
+            margin: 0 auto;
+        }
+        button {
+            background-color: #5ba63d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4b8c32;
+        }
+        .logo {
+            margin-top: 20px;
+        }
+        .image {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Network Created Successfully</h1>
+        <p>Your new network has been created and the devices have been added.</p>
+        <br>
+        <p>Now, let's optimize this network for Sustainability.</P>
+            <br>
+            <p>This tool helps optimize your network for sustainability by adjusting various settings to reduce 
+            power consumption, manage device schedules, and utilize sensor data for efficient energy use.</p>
+            <br>
+        <p>By optimizing your network, you contribute to a more sustainable future by reducing energy waste 
+            and improving the efficiency of your IT infrastructure.</p>
+            <br>
+        <p><a href="{{ dashboard_url }}" target="_blank">View Network in Meraki Dashboard</a></p>
+        <form action="/optimize" method="post">
+            <input type="hidden" name="network_id" value="{{ network_id }}">
+            <button type="submit">Optimize for Sustainability Now</button>
+        </form>
+    </div>
+</body>
+</html>

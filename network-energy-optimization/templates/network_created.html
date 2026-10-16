@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Created</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #666;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #5ba63d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4b8c32;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Network Created Successfully</h1>
+        <p>The new network has been created and devices have been added.</p>
+        <p><a href="https://n109.meraki.com/o/rP8X8c/manage/new_reports?from=organization+summary_report" target="_blank">View in Meraki Dashboard</a></p>
+        <form action="/optimize" method="post">
+            <input type="hidden" name="network_id" value="{{ network_id }}">
+            <button type="submit">Optimize Now</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Flask
+meraki
+pandas
+# Optional modeling/visualization dependencies:
+# tensorflow
+# scikit-learn
+# matplotlib
